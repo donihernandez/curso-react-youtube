@@ -1,0 +1,17 @@
+.user-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-left: 5px;
+}
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #457b9d;
+}
+
+.user-age {
+    font-size: 14px;   
+}

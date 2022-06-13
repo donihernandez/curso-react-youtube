@@ -1,0 +1,27 @@
+.card {
+    background-color: #f1faee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    padding: 30px;
+    min-width: 400px;
+}
+
+.list-button {
+    background-color: #1d3557;
+    color: #f1faee;
+    border-radius: 5px;
+    margin: 10px 0; 
+    padding: 15px 20px;
+    min-width: 400px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.list-button:hover {
+    background-color: #457b9d;
+}
