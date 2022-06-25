@@ -1,15 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-import { fontFamily as _fontFamily } from 'tailwindcss/defaultTheme'
+const defaultTheme = require('tailwindcss/defaultTheme')
 
-export const content = [
-  "./src/**/*.{js,jsx,ts,tsx}",
-]
-export const theme = {
-  extend: {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+      "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+   extend: {
     fontFamily: {
-      'display': ['Anton', ..._fontFamily.sans],
-      'body': ['Inter', ..._fontFamily.serif],
+      sans: ['Anton', ...defaultTheme.fontFamily.sans],
+      serif: ['Inter', ...defaultTheme.fontFamily.serif],
     },
-  }
+  },
+  plugins: [],
 }
-export const plugins = []
