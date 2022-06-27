@@ -1,7 +1,6 @@
 const Title = () => {
-
     return (
-        <h1 className="text-5xl font-Anton font-sans font-bold tracking-widest">
+        <h1 className="text-5xl font-anton font-bold tracking-widest">
             Todo App
         </h1>
     );

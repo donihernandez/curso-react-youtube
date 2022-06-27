@@ -60,7 +60,8 @@ function App() {
   } 
 
   const handleClearComplete = () => {
-    setTodos([]);
+    const updatedList = todos.filter(todo => !todo.completed);
+    setTodos(updatedList);
   };
 
   const handleDelete = (id) => {
@@ -94,7 +95,7 @@ function App() {
   },[activeFilter, todos]);
 
   return (
-    <div className='bg-gray-900 min-h-screen h-full text-gray-100 flex items-center justify-center py-20 px-5'>
+    <div className='bg-gray-900 min-h-screen font-inter h-full text-gray-100 flex items-center justify-center py-20 px-5'>
       <div className='container flex flex-col max-w-xl'>
         <Title />
         <TodoInput addTodo={addTodo} />
