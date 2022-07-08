@@ -7,10 +7,6 @@ const links = [
         href: '/movies',
         name: 'Movies',
     },
-    {
-        href: '/tv',
-        name: 'TV Shows',
-    },
 ];
 
 export default links;
