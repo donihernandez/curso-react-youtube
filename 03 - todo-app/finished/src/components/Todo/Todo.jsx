@@ -2,14 +2,11 @@ import { useState } from "react";
 
 const Todo = ({ todo, handleSetComplete, handleDelete }) => {
 
-    const [opacity, setOpacity] = useState(0);
     const { id, title, completed } = todo;
 
     return (
         <div
             className="flex items-center justify-between p-4 bg-gray-700 border-b border-solid border-gray-600 "
-            onMouseEnter={() => setOpacity(1)}
-            onMouseLeave={() => setOpacity(0)}
         >
             <div className="flex items-center">
                 {
@@ -29,7 +26,7 @@ const Todo = ({ todo, handleSetComplete, handleDelete }) => {
                 <p className={"pl-3 " + (completed && "line-through")}>{title}</p>
             </div>
 
-            <img onClick={() => handleDelete(id)} className={`h-5 w-5 opacity-${opacity} cursor-pointer transition-all duration-300 ease-in`} src="/close-icon.svg" alt="Close Icon" />
+            <img onClick={() => handleDelete(id)} className="h-5 w-5 cursor-pointer transition-all duration-300 ease-in" src="/close-icon.svg" alt="Close Icon" />
         </div>
     );
 }
