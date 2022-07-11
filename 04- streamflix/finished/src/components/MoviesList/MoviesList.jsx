@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Heading } from "@chakra-ui/react"
+import { Box, Flex, Grid, GridItem, Heading, SimpleGrid } from "@chakra-ui/react"
 import { useShowsContext } from "../../context/ShowsContext"
 import { Movie } from "../Movie"
 
@@ -11,13 +11,13 @@ const MoviesList = () => {
             <Heading as="h2" fontSize="50px" mb="40px">
                 Our Popular Movies
             </Heading>
-            <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+            <SimpleGrid columns={[1, null, 3]} spacing='20px'>
                 {shows.map(show => (
-                    <GridItem>
+                    <Box>
                         <Movie movie={show} />
-                    </GridItem>
+                    </Box>
                 ))}
-            </Grid>
+            </SimpleGrid>
         </Flex>
 
     )
