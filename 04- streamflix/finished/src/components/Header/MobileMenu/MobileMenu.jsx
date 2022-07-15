@@ -1,6 +1,5 @@
-import { DrawerHeader, Flex, Link, useDisclosure } from '@chakra-ui/react';
+import { Flex, Link, useDisclosure } from '@chakra-ui/react';
 import { useRef } from 'react';
-
 
 import {
     Drawer,
@@ -47,7 +46,7 @@ const MobileMenu = () => {
                         padding="20px"
                         size="30px"
                     />
-                    <DrawerHeader></DrawerHeader>
+                    {/* <DrawerHeader></DrawerHeader> */}
                     <DrawerBody>
                         <Flex
                             alignItems="center"

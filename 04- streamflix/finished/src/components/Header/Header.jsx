@@ -7,7 +7,6 @@ import { useBreakpoints } from '../../hooks/useBreakpoints'
 const Header = () => {
     const { isSmallerThanDesktop } = useBreakpoints();
 
-
     return (
         <Flex
             alignItems="center"

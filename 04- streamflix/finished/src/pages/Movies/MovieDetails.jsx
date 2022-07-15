@@ -71,7 +71,6 @@ const MovieDetails = () => {
                         <Text fontSize="18px">{movie.overview}</Text>
                         <Divider my={4} />
                         <Box
-                            // eslint-disable-next-line max-len
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                             as="iframe"
